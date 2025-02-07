@@ -1,0 +1,185 @@
+
+body{
+    background-color: white;
+    
+    
+}
+.price{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    margin-left: 170px;
+}
+
+.pricing-container {
+    width: 325px;
+    height: 103px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 260px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    
+}
+
+.pricing-title {
+    font-size: 32px;
+    font-family: cinzel;
+    color: #444444;
+    margin-bottom: 5px;
+}
+
+.toggle-wrapper {
+    display: flex;
+    background: white;
+    border-radius: 32px; 
+    padding: 4px 10px; 
+    position: relative;
+    width: 325px; 
+    height: 60px; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px; 
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    flex: 1;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.toggle-input:checked + .toggle-label {
+    color: white;
+    font-weight: bold;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 32px; 
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+#quarterly:checked ~ .toggle-slider {
+    transform: translateX(110px);
+}
+
+#lifetime:checked ~ .toggle-slider {
+    transform: translateX(220px);
+}
+
+  .pricing-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-options button {
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .pricing-options .selected {
+    background-color: gold;
+    font-weight: bold;
+  }
+  
+.pricing-card {
+    display: flex;
+    height: 171px;
+    width: 763px;
+    gap:100px;
+   
+}
+.whole-div{
+    
+    height: 319px;
+    width: 867px;
+    gap:51px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 16px solid transparent; 
+    border-image: linear-gradient(259.82deg, #D0AA34 33.47%, #A57914 70.76%, #FFFFFF 109.26%);
+    border-image-slice: 1;
+    
+    box-sizing: border-box; 
+    position: relative;
+
+}
+
+  .pricing-card ul {
+    
+    list-style: none;
+    padding: 0;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .new-price {
+    color: gold;
+  }
+  .limited-access{
+    background-color: #ffeec0;
+    border-radius: 32px;
+  }
+  .cta-button {
+    width:206px;
+    height:49px;
+    border-radius: 11.16px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    gap:10px;
+    color: white;
+    font-family: cormorant garamond;
+    font-size: 16px;
+    background: linear-gradient(90deg, #D4AF37 0%, #A37611 100%);
+   
+  }
+  
+  
+
+  .downloads
+  {
+    width:483px;
+    height:171px;
+    color:black;
+    border: 2px solid black(255, 0, 0, 0.5);
+    font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+  }
+.prices{
+    width:180px;
+    height: 115px
+  }
